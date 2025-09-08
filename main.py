@@ -56,7 +56,7 @@ def main():
                 break
             
             case _:  
-                print("Opcao invalida!")
+                print("Invalid option.")
         
         input("\n")
 
