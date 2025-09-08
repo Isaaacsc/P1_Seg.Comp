@@ -12,14 +12,14 @@ vigenere = VigenereCipher()
 def main():
     while True:
         menu()
-        opcao = input('Select an option: ').strip()
+        option = input('Select an option: ').strip()
         
-        match opcao:
+        match option:
             case "1" | "2":
                 try:
                     msg = input("Enter message: ").upper()
                     key = input("Enter key: ").upper()
-                    if opcao == "1":
+                    if option == "1":
                         cipher = vigenere.crypt_decrypt(msg, key, 'C')
                         print("Encrypted message: ", cipher)
                     else:
